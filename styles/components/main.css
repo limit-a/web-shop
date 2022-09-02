@@ -4,12 +4,13 @@
     width: 100%;
 }
 
-main * {
-    width: 33%;
+#home-body main aside {
+    width: 200px;
+    background-color: darksalmon;
 }
 
-main aside {
-    background-color: darksalmon;
+#home-body main section {
+    width: 100%;
 }
 
 #article01 iframe {
