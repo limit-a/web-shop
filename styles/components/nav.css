@@ -1,0 +1,14 @@
+#home-body nav {
+    background-color: darkgoldenrod;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+}
+
+nav ul li {
+    display: block;
+}
