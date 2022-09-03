@@ -1,5 +1,13 @@
 #home-body header {
     width: 100%;
+}
+
+#home-body header a {
     font-size: 32px;
     font-weight: bold;
+    color: transparent;
+    background: linear-gradient(to right, #ffa3a1, #a62efd);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }

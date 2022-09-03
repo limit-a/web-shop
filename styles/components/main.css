@@ -1,18 +1,15 @@
 #home-body main {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 #home-body main aside {
-    width: 200px;
-    background-color: darksalmon;
+  width: 200px;
+  padding: 20px;
+  background-color: darksalmon;
 }
 
 #home-body main section {
-    width: 100%;
-}
-
-#article01 iframe {
-    width: 100%;
+  width: 100%;
 }

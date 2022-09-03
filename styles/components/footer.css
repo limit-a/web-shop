@@ -1,5 +1,5 @@
 #home-body footer {
-    height: 50px;
+    min-height: 50px;
     text-align: center;
     background-color: deeppink;
 }

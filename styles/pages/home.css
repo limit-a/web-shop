@@ -1,0 +1,14 @@
+#home-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#home-body > * {
+  width: 100%;
+  margin: 10px;
+}

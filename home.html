@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="https://unpkg.com/mvp.css"> -->
     <link rel="stylesheet" href="./styles/mystyle.css" />
-    <title>content</title>
+    <title>home</title>
   </head>
 
   <body id="home-body">
@@ -28,27 +28,58 @@
     <main>
       <aside id="left">
         <ul>
-          <li><a href="./section/computer.html" target="ifr">컴퓨터</a></li>
-          <li><a href="./section/clothing.html" target="ifr">의류</a></li>
-          <li><a href="./section/music.html" target="ifr">음악</a></li>
-          <li><a href="./section/movie.html" target="ifr">영화</a></li>
-          <li><a href="./section/sport.html" target="ifr">스포츠/레져</a></li>
           <li>
-            <a href="./section/furniture.html" target="ifr">가구/인테리어</a>
+            <a href="./section/computer.html" target="section-ifr">컴퓨터</a>
           </li>
-          <li><a href="./section/food.html" target="ifr">식품</a></li>
+          <li>
+            <a href="./section/clothing.html" target="section-ifr">의류</a>
+          </li>
+          <li><a href="./section/music.html" target="section-ifr">음악</a></li>
+          <li><a href="./section/movie.html" target="section-ifr">영화</a></li>
+          <li>
+            <a href="./section/sport.html" target="section-ifr">스포츠/레져</a>
+          </li>
+          <li>
+            <a href="./section/furniture.html" target="section-ifr"
+              >가구/인테리어</a
+            >
+          </li>
+          <li><a href="./section/food.html" target="section-ifr">식품</a></li>
         </ul>
       </aside>
       <section>
         <article id="article01">
-          <iframe src="./section/computer.html" name="ifr"> </iframe>
+          <iframe src="./section/computer.html" name="section-ifr"> </iframe>
         </article>
       </section>
       <aside id="right">
-        <div id="shopcart">…</div>
+        <div id="shopcart">
+          <h4>Shopping Cart</h4>
+          <span>현재 쇼핑카트에 물품이 없습니다.</span>
+          <span
+            ><a href="./shopcart.html" target="_blank"
+              >쇼핑카트 보기</a
+            ></span
+          >
+        </div>
         <div id="login">
           <h4>Log In</h4>
-          <form action="#">…</form>
+          <form action="#" method="get">
+            <label for="user-id">아이디</label>
+            <input type="text" name="userID" id="user-id" />
+            <label for="user-password">패스워드</label>
+            <input type="password" name="userPassword" id="user-password" />
+            <div>
+              <input type="submit" value="로그인" />
+              <input type="reset" value="초기화" />
+            </div>
+            <div>
+              <span
+                ><a href="./register.html" target="_blank">회원가입</a></span
+              >
+              <span><a href="#">비밀번호 분실</a></span>
+            </div>
+          </form>
         </div>
       </aside>
     </main>

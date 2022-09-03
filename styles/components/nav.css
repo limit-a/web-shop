@@ -15,6 +15,22 @@ nav ul li {
     display: block;
 }
 
-nav ul li:hover {
-    text-decoration-line: underline;
+nav li a {
+    color: black;
+    background-color: white;
+    background-clip: unset;
+    transition-property: color, background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+nav li a:hover {
+    color: transparent;
+    background: linear-gradient(to right, #ffa3a1, #a62efd);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition-property: color, background-color, -webkit-text-fill-color, -webkit-background-clip;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
 }
