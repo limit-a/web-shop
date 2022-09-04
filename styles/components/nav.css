@@ -17,20 +17,17 @@ nav ul li {
 
 nav li a {
     color: black;
-    background-color: white;
-    background-clip: unset;
-    transition-property: color, background-color;
-    transition-duration: 2s;
-    transition-timing-function: ease-in-out;
+    -webkit-text-fill-color: black;
+    background: white;
 }
 
 nav li a:hover {
     color: transparent;
+    -webkit-text-fill-color: transparent;
     background: linear-gradient(to right, #ffa3a1, #a62efd);
     background-clip: text;
-    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    transition-property: color, background-color, -webkit-text-fill-color, -webkit-background-clip;
-    transition-duration: 2s;
+    transition-property: color, -webkit-text-fill-color, background;
+    transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
 }
