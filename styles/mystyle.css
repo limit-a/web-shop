@@ -32,13 +32,6 @@ body {
     /* background-color: $background-black; */
 }
 
-iframe {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
 /*
 main {
     width: 94%;
@@ -63,4 +56,11 @@ a {
     width: 100%;
     min-width: 950px;
     height: 100%;
+}
+
+#index-body iframe {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
 }

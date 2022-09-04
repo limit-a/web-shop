@@ -68,10 +68,9 @@
                 <article id="article01">
                     <iframe
                         src="./section/computer.html"
-                        frameborder="0"
                         scrolling="no"
+                        frameborder="0"
                         name="section-ifr"
-                        onload="calcIframe()"
                     >
                     </iframe>
                 </article>
@@ -118,16 +117,5 @@
             src="https://kit.fontawesome.com/fc292d728d.js"
             crossorigin="anonymous"
         ></script>
-        <script type="text/javascript">
-            function calcIframe() {
-                const theHeight =
-                    document.querySelector("iframe").contentWindow.document.body
-                        .scrollHeight;
-
-                document.querySelector("iframe").height = theHeight;
-
-                document.getElementById("iframe").style.overflow = "hidden";
-            }
-        </script>
     </body>
 </html>
