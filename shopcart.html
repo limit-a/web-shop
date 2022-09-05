@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="https://unpkg.com/mvp.css"> -->
-    <link rel="stylesheet" href="./styles/mystyle.css" />
-    <title>shopcart</title>
-  </head>
-  <body>
-    <h1>shopcart</h1>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link rel="stylesheet" href="https://unpkg.com/mvp.css"> -->
+        <link rel="stylesheet" href="./css/mystyle.css" />
+        <title>shopcart</title>
+    </head>
+    <body id="shopcart-body">
+        <h1>장바구니 테이블</h1>
+        <form action="#" method="post">
+            <div id="shopcart-grid">
+                <div><span>품목</span></div>
+                <div><span>가격</span></div>
+                <div><span>수량</span></div>
+                <div><span>합계</span></div>
+                <div><span>컴퓨터 세트</span></div>
+                <div><span>2,000,000원</span></div>
+                <div><input type="number" value="0" /></div>
+                <div><input type="number" value="0" /></div>
+                <div><span>티셔츠</span></div>
+                <div><span>50,000원</span></div>
+                <div><input type="number" value="0" /></div>
+                <div><input type="number" value="0" /></div>
+                <div><span>음악파일</span></div>
+                <div><span>1,000원</span></div>
+                <div><input type="number" value="0" /></div>
+                <div><input type="number" value="0" /></div>
+                <div><span>영화파일</span></div>
+                <div><span>5,000원</span></div>
+                <div><input type="number" value="0" /></div>
+                <div><input type="number" value="0" /></div>
+            </div>
+            <div>
+                <input type="button" value="계산" />
+                <input type="submit" value="구매" />
+                <input type="reset" value="초기화" />
+            </div>
+            <span id="back-home">Back to Home</span>
+        </form>
+        <script src="./js/shopcart.js"></script>
+    </body>
 </html>

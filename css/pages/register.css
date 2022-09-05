@@ -1,0 +1,39 @@
+#register-body h1 {
+    margin: 50px auto;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#register-form fieldset {
+    width: 550px;
+    padding: 50px;
+    margin: 0 auto;
+    line-height: 30px;
+    border: 1px solid black;
+}
+
+#register-form .register-label {
+    display: inline-block;
+    width: 130px;
+}
+
+#register-form
+    input:not([type="button"], [type="radio"], [type="submit"], [type="reset"]) {
+    width: 200px;
+}
+
+#register-form input[type="button"] {
+    margin-left: 10px;
+}
+
+#register-form label[for="male"] {
+    margin-right: 30px;
+}
+
+#register-form input[type="submit"],
+#register-form input[type="reset"] {
+    width: 220px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
