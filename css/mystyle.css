@@ -66,11 +66,18 @@ a {
     overflow-y: auto;
 }
 
-#popup-movie {
+#popup {
     position: absolute;
-    display: none;
     width: 100%;
     height: 100%;
     background-color: black;
     opacity: 0.5;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
 }
