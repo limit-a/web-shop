@@ -6,5 +6,5 @@ const showMovie = (event) => {
 };
 
 movieDivs.forEach((element) => {
-    element.addEventListener("click", showMovie);
+    element.addEventListener("pointerdown", showMovie);
 });
