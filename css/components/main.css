@@ -6,6 +6,7 @@
 
 #home-body main aside {
     width: 200px;
+    min-width: 180px;
     padding: 20px;
     background-color: darksalmon;
 }
