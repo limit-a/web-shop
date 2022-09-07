@@ -12,6 +12,7 @@
 @import "./pages/home.css";
 @import "./pages/shopcart.css";
 @import "./pages/register.css";
+@import "./pages/music.css";
 
 * {
     box-sizing: border-box;

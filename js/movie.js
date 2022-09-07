@@ -1,13 +1,12 @@
-const movieDivs = document.querySelectorAll("#section-body div");
+const movieImgs = document.querySelectorAll("#section-body div img");
 
-const postMovie = (event) => {
-    console.log(event);
+const postMovieData = (event) => {
     if (event.button === 0 && event.buttons === 1) {
-        const { movieId } = event.target.dataset;
+        const { movieId } = event.target.parentNode.dataset;
         window.top.postMessage({ movieId }, "*");
     }
 };
 
-movieDivs.forEach((element) => {
-    element.addEventListener("pointerdown", postMovie);
+movieImgs.forEach((element) => {
+    element.addEventListener("pointerdown", postMovieData);
 });
