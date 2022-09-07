@@ -1,23 +1,22 @@
 const popup = document.getElementById("popup");
-// const movieIfr = document.createElement("iframe");
+const xMark = popup.querySelector("i");
 
-const popupMovie = (event) => {
+const showPopup = (event) => {
     const anchor = document.createElement("a");
     anchor.target = "popup-ifr";
-    anchor.href = `https://www.youtube.com/embed/${event.data}`;
+    anchor.href = `https://www.youtube.com/embed/${event.data.movieId}`;
     document.body.appendChild(anchor);
     anchor.click();
     document.body.removeChild(anchor);
-    // console.log(event);
-    // console.log(event.data);
-
-    // movieIfr.src = `https://www.youtube.com/embed/${event.data}`;
-    // popup.appendChild(movieIfr);
-
-    // popup.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${event.data}" frameborder="0" allowfullscreen></iframe>`;
 
     popup.classList.remove("hide");
     popup.classList.add("show");
 };
 
-window.addEventListener("message", popupMovie);
+const hidePopup = () => {
+    popup.classList.remove("show");
+    popup.classList.add("hide");
+};
+
+window.addEventListener("message", showPopup);
+xMark.addEventListener("pointerdown", hidePopup);

@@ -1,10 +1,10 @@
 const movieDivs = document.querySelectorAll("#section-body div");
 
-const showMovie = (event) => {
-    const { videoId } = event.target.dataset;
-    window.parent.parent.postMessage({ videoId }, "*");
+const postMovie = (event) => {
+    const { movieId } = event.target.dataset;
+    window.top.postMessage({ movieId }, "*");
 };
 
 movieDivs.forEach((element) => {
-    element.addEventListener("pointerdown", showMovie);
+    element.addEventListener("pointerdown", postMovie);
 });
